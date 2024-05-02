@@ -1,0 +1,1 @@
+Resqme is a flutter based application with firebase in its backend. Having basic features like SOS alert button, custom message and location sender. Component of this project has been ispired from various projects throughout the Github

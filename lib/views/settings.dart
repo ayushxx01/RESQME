@@ -111,10 +111,11 @@ class _SettingsState extends State<Settings> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 250, 243, 221),
       appBar: AppBar(
         centerTitle: true,
         title: const Text("Settings", style: TextStyle(color: Colors.white)),
-        backgroundColor: Colors.blue,
+        backgroundColor: const Color.fromARGB(255, 43, 85, 119),
       ),
       body: SingleChildScrollView(
         child: Container(
@@ -131,7 +132,7 @@ class _SettingsState extends State<Settings> {
                 ElevatedButton(
                   child: const Text(
                     'Save Changes',
-                    style: TextStyle(color: Colors.white, fontSize: 16),
+                    style: TextStyle(color: Color.fromARGB(255, 43, 85, 119), fontSize: 16),
                   ),
                   onPressed: () {
                     if (!_formKey.currentState!.validate()) return;

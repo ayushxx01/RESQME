@@ -22,20 +22,20 @@ environment:
 # To automatically upgrade your package dependencies to the latest versions consider running `flutter pub upgrade --major-versions`.
 # To see which dependencies have newer versions available, run `flutter pub outdated`.
 dependencies:
-  awesome_notifications: ^0.7.4+1
+  awesome_notifications: ^0.9.3+1
   contacts_service: ^0.6.3
   cupertino_icons: ^1.0.2
   firebase_auth: ^4.2.9
-  firebase_core: ^2.7.0
+  firebase_core: ^2.30.0
   flutter:
     sdk: flutter
   flutter_isolate: ^2.0.4
   flutter_svg: ^2.0.2
   fluttertoast: ^8.2.1
-  geocoding: ^2.0.5
-  geolocator: ^9.0.2
+  geocoding: ^3.0.0
+  geolocator: ^11.0.0
   google_sign_in: ^6.0.1
-  permission_handler: ^10.2.0
+  permission_handler: ^11.3.1
   shared_preferences: ^2.0.18
   sqflite: ^2.2.5
   telephony: ^0.2.0
@@ -47,7 +47,7 @@ dev_dependencies:
   # activated in the `analysis_options.yaml` file located at the root of your
   # package. See that file for information about deactivating specific lint
   # rules and activating additional ones.
-  flutter_lints: ^2.0.0
+  flutter_lints: ^3.0.2
   flutter_test:
     sdk: flutter
 

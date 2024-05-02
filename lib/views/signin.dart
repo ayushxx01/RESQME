@@ -16,21 +16,22 @@ class _SignInState extends State<SignIn> {
     Size size = MediaQuery.of(context).size;
     return Scaffold(
       appBar: AppBar(
+        backgroundColor: Colors.transparent,
         centerTitle: true,
-        title: Column(
-          children: const [
-            Text("Sign in"),
+        title: const Column(
+          children:  [
+            Text("Sign in", style: TextStyle(color: Colors.white)),
           ],
         ),
       ),
-      backgroundColor: Colors.blue,
+      backgroundColor: Color.fromARGB(255, 255, 49, 49),
       body: Center(
         child: Column(
           children: <Widget>[
             Padding(
               padding: const EdgeInsets.only(top: 100.0),
               child: SvgPicture.asset(
-                "assets/icons/happy.svg",
+                "assets/icons/logo2.svg",
                 height: size.height * 0.35,
               ),
             ),

@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:women_safety_app/services/notification_controller.dart';
-import 'firebase_options.dart';
+
 import 'services/auth_methods.dart';
 import 'views/home/home.dart';
 import 'views/signin.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
-  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
+  await Firebase.initializeApp();
   NotificationController.initializeLocalNotifications();
 
   runApp(const MyApp());
@@ -18,7 +18,7 @@ class MyApp extends StatefulWidget {
   const MyApp({super.key});
 
   static final GlobalKey<NavigatorState> navigatorKey = GlobalKey<NavigatorState>();
-  static const String appName = 'WithYou - Women Safety App';
+  static const String appName = 'ResQme';
 
   @override
   State<MyApp> createState() => _MyAppState();

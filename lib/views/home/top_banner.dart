@@ -5,13 +5,13 @@ class TopBanner extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Column(
+    return const Column(
       crossAxisAlignment: CrossAxisAlignment.start,
-      children: const [
+      children: [
         Text(
           "Trigger a SOS in just one tap!",
           style: TextStyle(
-            color: Colors.blue,
+            color: Color.fromARGB(255, 255, 49, 49),
             fontWeight: FontWeight.w600,
             fontSize: 21,
           ),
@@ -23,7 +23,7 @@ class TopBanner extends StatelessWidget {
           style: TextStyle(color: Colors.black87, fontWeight: FontWeight.w400, fontSize: 18),
         ),
         Text(
-          "➜ From Lock screen notification",
+          "➜ From Lock screen notification bar",
           style: TextStyle(color: Colors.black54, fontWeight: FontWeight.w500, fontSize: 15),
         ),
         Text(

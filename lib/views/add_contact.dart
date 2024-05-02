@@ -33,15 +33,16 @@ class _AddContactsState extends State<AddContacts> {
   Widget build(BuildContext context) {
     // Size size = MediaQuery.of(context).size;
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 250, 243, 221),
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
           "Trusted Contacts",
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: const Color.fromARGB(255, 43, 85, 119),
         iconTheme: const IconThemeData(
-          color: Colors.black, //change your color here
+          color: Colors.white, //change your color here
         ),
       ),
       body: Container(

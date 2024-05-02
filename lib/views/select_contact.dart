@@ -103,15 +103,16 @@ class _SelectContactState extends State<SelectContact> {
     bool isSearching = searchController.text.isNotEmpty;
     bool listItemsExist = (contactsFiltered.isNotEmpty || contacts.isNotEmpty);
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 250, 243, 221),
       appBar: AppBar(
         centerTitle: true,
         title: const Text(
           "Select a Contact",
-          style: TextStyle(color: Colors.black),
+          style: TextStyle(color: Colors.white),
         ),
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 43, 85, 119),
         iconTheme: const IconThemeData(
-          color: Colors.black, //change your color here
+          color: Colors.white, //change your color here
         ),
       ),
       body: Container(

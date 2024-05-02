@@ -66,7 +66,7 @@ class SosNotificationMethods {
         title: 'SOS is initiating in ${maxStep - simulatedStep} seconds',
         payload: {'finished': 'false'},
         notificationLayout: NotificationLayout.ProgressBar,
-        progress: min((simulatedStep / maxStep * 100).round(), 100),
+        progress: min((simulatedStep / maxStep * 100).round(), 100).toDouble(),
         autoDismissible: false,
         locked: true,
       ),

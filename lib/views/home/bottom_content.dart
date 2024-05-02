@@ -14,7 +14,7 @@ class BottomContent extends StatelessWidget {
       width: MediaQuery.of(context).size.width,
       padding: const EdgeInsets.all(20.0),
       decoration: const BoxDecoration(
-        color: Colors.blue,
+        color: Color.fromARGB(255, 43, 85, 119),
         shape: BoxShape.rectangle,
         borderRadius: BorderRadius.only(
           topLeft: Radius.circular(40.0),
@@ -55,7 +55,7 @@ class BottomContent extends StatelessWidget {
                 }
               },
               style: ElevatedButton.styleFrom(
-                backgroundColor: const Color.fromARGB(255, 255, 123, 113),
+                backgroundColor: Color.fromARGB(255, 255, 49, 49),
                 foregroundColor: Colors.white,
                 padding: const EdgeInsets.all(30),
                 shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(45.0)),
@@ -93,12 +93,14 @@ class BottomContent extends StatelessWidget {
                       colorFilter: const ColorFilter.mode(Colors.white, BlendMode.srcIn),
                     ),
                   ),
-                  const Text(
-                    "Add Contacts",
-                    style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w400,
-                      fontSize: 21,
+                  const Expanded(
+                    child: Text(
+                      "Add Contacts",
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w400,
+                        fontSize: 21,
+                      ),
                     ),
                   ),
                 ],

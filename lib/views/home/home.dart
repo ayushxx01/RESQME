@@ -30,13 +30,14 @@ class _HomeState extends State<Home> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color.fromARGB(255, 250, 243, 221),
       appBar: AppBar(
-        backgroundColor: Colors.white,
+        backgroundColor: Color.fromARGB(255, 43, 85, 119),
         shadowColor: Colors.white,
-        iconTheme: const IconThemeData(color: Colors.black),
+        iconTheme: const IconThemeData(color: Colors.white),
         title: const Text(
-          "WithYou",
-          style: TextStyle(color: Colors.black),
+          "ResQme",
+          style: TextStyle(color: Colors.white),
         ),
         centerTitle: true,
       ),
